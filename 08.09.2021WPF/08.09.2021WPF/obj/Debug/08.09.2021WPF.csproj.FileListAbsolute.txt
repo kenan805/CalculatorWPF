@@ -1,0 +1,15 @@
+C:\Users\user\source\repos\CalculatorWPF\08.09.2021WPF\08.09.2021WPF\bin\Debug\08.09.2021WPF.exe.config
+C:\Users\user\source\repos\CalculatorWPF\08.09.2021WPF\08.09.2021WPF\bin\Debug\08.09.2021WPF.exe
+C:\Users\user\source\repos\CalculatorWPF\08.09.2021WPF\08.09.2021WPF\bin\Debug\08.09.2021WPF.pdb
+C:\Users\user\source\repos\CalculatorWPF\08.09.2021WPF\08.09.2021WPF\obj\Debug\08.09.2021WPF.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\CalculatorWPF\08.09.2021WPF\08.09.2021WPF\obj\Debug\MainWindow.g.cs
+C:\Users\user\source\repos\CalculatorWPF\08.09.2021WPF\08.09.2021WPF\obj\Debug\App.g.cs
+C:\Users\user\source\repos\CalculatorWPF\08.09.2021WPF\08.09.2021WPF\obj\Debug\08.09.2021WPF_MarkupCompile.cache
+C:\Users\user\source\repos\CalculatorWPF\08.09.2021WPF\08.09.2021WPF\obj\Debug\08.09.2021WPF_MarkupCompile.lref
+C:\Users\user\source\repos\CalculatorWPF\08.09.2021WPF\08.09.2021WPF\obj\Debug\MainWindow.baml
+C:\Users\user\source\repos\CalculatorWPF\08.09.2021WPF\08.09.2021WPF\obj\Debug\08.09.2021WPF.g.resources
+C:\Users\user\source\repos\CalculatorWPF\08.09.2021WPF\08.09.2021WPF\obj\Debug\_08._09._2021WPF.Properties.Resources.resources
+C:\Users\user\source\repos\CalculatorWPF\08.09.2021WPF\08.09.2021WPF\obj\Debug\08.09.2021WPF.csproj.GenerateResource.cache
+C:\Users\user\source\repos\CalculatorWPF\08.09.2021WPF\08.09.2021WPF\obj\Debug\08.09.2021WPF.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\CalculatorWPF\08.09.2021WPF\08.09.2021WPF\obj\Debug\08.09.2021WPF.exe
+C:\Users\user\source\repos\CalculatorWPF\08.09.2021WPF\08.09.2021WPF\obj\Debug\08.09.2021WPF.pdb

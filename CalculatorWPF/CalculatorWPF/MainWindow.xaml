@@ -1,0 +1,185 @@
+﻿<Window x:Class="CalculatorWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculatorWPF"
+        mc:Ignorable="d"
+        Title="Calculator" Height="508" Width="339" Icon="calculator_48px.png" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Background="#E6E6E6">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="1.5*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Button Background="Transparent" BorderThickness="0" Foreground="#717276" FontWeight="SemiBold" Content="MC" Height="33" Width="54.8" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Button Background="Transparent" BorderThickness="0" Foreground="#717276" FontWeight="SemiBold" Content="MR" Height="33" Width="54.8" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Button Background="Transparent" BorderThickness="0" FontWeight="SemiBold" Content="M+" Height="33" Width="54.8" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="3">
+                    <Button Background="Transparent" BorderThickness="0" FontWeight="SemiBold" Content="M-" Height="33" Width="54.8" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5"/>
+                </Grid>
+                <Grid Grid.Column="4">
+                    <Button Background="Transparent" BorderThickness="0" FontWeight="SemiBold" Content="MS" Height="33" Width="54.8" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="5">
+                    <Button Background="Transparent" BorderThickness="0" Foreground="#717276" FontWeight="SemiBold" Content="M" Height="33" Width="54.8" VerticalAlignment="Center"/>
+                </Grid>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnName" Background="Transparent" BorderThickness="0">
+                    <Image Source="menu_64px.png" Width="20" ></Image>
+                </Button>
+                <Grid Grid.Column="1">
+                    <Label VerticalAlignment="Center" Padding="10" FontSize="20" FontWeight="DemiBold" >Standard</Label>
+                    <Button Background="Transparent" BorderThickness="0" Width="30">
+                        <Image Source="open_in_popup_24px.png" Width="20" Margin="0,5,0,0"></Image>
+                    </Button>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Button Background="Transparent" BorderThickness="0">
+                        <Image Source="time_machine_24px.png" Width="20" Margin="0,5,0,0"></Image>
+                    </Button>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="1">
+                <TextBox x:Name="tb_Result" IsReadOnly="True" BorderThickness="0" Text="0" Background="Transparent" FontSize="44" FontWeight="SemiBold" HorizontalContentAlignment="Right" Margin="28,0,22.8,-0.4"/>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid>
+                <Button Background="#F0F0F0" Content="%" FontSize="22" Padding="25 0 25 0" FontFamily="Calibri Light" FontWeight="ExtraLight" Foreground="Black" Width="81.6" Height="52.8"></Button>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Button Click="Button_ClearAll" Background="#F0F0F0" Content="CE" FontSize="22" Padding="25 0 25 0" FontFamily="Calibri Light" FontWeight="ExtraLight" Foreground="Black" Width="81.6" Height="52.8"></Button>
+            </Grid>
+            <Grid Grid.Column="2">
+                <Button Click="Button_ClearAll" Background="#F0F0F0" Content="C" FontSize="22" Padding="25 0 25 0" FontFamily="Calibri Light" FontWeight="ExtraLight" Foreground="Black" Width="81.6" Height="52.8"></Button>
+            </Grid>
+            <Grid Grid.Column="3">
+                <Button Click="Button_Clear" Background="#F0F0F0" Padding="25 0 25 0" Width="81.6" Height="52.8">
+                    <Image Source="clear_symbol_32px.png"></Image>
+                </Button>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Button Click="Button_1DivideNum_Click" Background="#F0F0F0" Padding="25 0 25 0" FontFamily="Malgun Gothic Semilight" Foreground="Black" Width="81.6" Height="52.8">
+                    <TextBlock>
+                        <Run Text="1" BaselineAlignment="Top" FontSize="14"/>
+                        <Run Text="∕" FontSize="20"/>
+                        <Run Text="x" FontSize="14" BaselineAlignment="TextBottom" />
+                    </TextBlock>
+                </Button>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Button Click="Button_Power_Click" Background="#F0F0F0" FontSize="20" Padding="25 0 25 0" FontFamily="Malgun Gothic Semilight" Foreground="Black" Width="81.6" Height="52.8">
+                    <TextBlock>
+                        <Run Text="x"/>
+                        <Run Text="2" FontSize="12" BaselineAlignment="Top"/>
+                    </TextBlock>
+                </Button>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="2">
+                <Button Click="Button_Sqrt_Click" Background="#F0F0F0" Padding="25 0 25 0" FontFamily="Malgun Gothic Semilight" Content="2√x" FontSize="18" Foreground="Black" Width="81.6" Height="52.8"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="3">
+                <Button Click="Button_Operation_Click" Background="#F0F0F0" Padding="25 0 25 0" FontFamily="Malgun Gothic Semilight" Content="÷" FontSize="32" Foreground="Black" Width="81.6" Height="52.8"/>
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="3">
+                <Button Click="Button_Operation_Click" Background="#F0F0F0" Padding="25 0 25 0" FontFamily="Malgun Gothic Semilight" Content="×" FontSize="32" Foreground="Black" Width="81.6" Height="52.8"/>
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="3">
+                <Button Click="Button_Operation_Click" Background="#F0F0F0" Padding="25 0 25 0" FontFamily="Malgun Gothic Semilight" Content="−" FontSize="32" Foreground="Black" Width="81.6" Height="52.8"/>
+            </Grid>
+            <Grid Grid.Row="4" Grid.Column="3">
+                <Button Click="Button_Operation_Click" Background="#F0F0F0" Padding="25 0 25 0" FontFamily="Malgun Gothic Semilight" Content="+" FontSize="32" Foreground="Black" Width="81.6" Height="52.8"/>
+            </Grid>
+            <Grid Grid.Row="5" Grid.Column="3">
+                <Button Click="Button_Equal_Click" Background="#8BB1CF" Padding="25 0 25 0" FontFamily="Malgun Gothic Semilight" Content="=" FontSize="32" Foreground="Black" Width="81.6" Height="52.8"/>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Button Click="Button_Click" Background="#FAFAFA" Padding="25 0 25 0" FontFamily="Calibri" Content="7" FontSize="28" Foreground="Black" Width="81.6" Height="52.8"/>
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="1">
+                <Button Click="Button_Click" Background="#FAFAFA" Padding="25 0 25 0" FontFamily="Calibri" Content="8" FontSize="28" Foreground="Black" Width="81.6" Height="52.8"/>
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="2">
+                <Button Click="Button_Click" Background="#FAFAFA" Padding="25 0 25 0" FontFamily="Calibri" Content="9" FontSize="28" Foreground="Black" Width="81.6" Height="52.8"/>
+            </Grid>
+            <Grid Grid.Row="3">
+                <Button Click="Button_Click" Background="#FAFAFA" Padding="25 0 25 0" FontFamily="Calibri" Content="4" FontSize="28" Foreground="Black" Width="81.6" Height="52.8"/>
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="1">
+                <Button Click="Button_Click" Background="#FAFAFA" Padding="25 0 25 0" FontFamily="Calibri" Content="5" FontSize="28" Foreground="Black" Width="81.6" Height="52.8"/>
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="2">
+                <Button Click="Button_Click" Background="#FAFAFA" Padding="25 0 25 0" FontFamily="Calibri" Content="6" FontSize="28" Foreground="Black" Width="81.6" Height="52.8"/>
+            </Grid>
+            <Grid Grid.Row="4">
+                <Button Click="Button_Click" Background="#FAFAFA" Padding="25 0 25 0" FontFamily="Calibri" Content="1" FontSize="28" Foreground="Black" Width="81.6" Height="52.8"/>
+            </Grid>
+            <Grid Grid.Row="4" Grid.Column="1">
+                <Button Click="Button_Click" Background="#FAFAFA" Padding="25 0 25 0" FontFamily="Calibri" Content="2" FontSize="28" Foreground="Black" Width="81.6" Height="52.8"/>
+            </Grid>
+            <Grid Grid.Row="4" Grid.Column="2">
+                <Button Click="Button_Click" Background="#FAFAFA" Padding="25 0 25 0" FontFamily="Calibri" Content="3" FontSize="28" Foreground="Black" Width="81.6" Height="52.8"/>
+            </Grid>
+            <Grid Grid.Row="5" Grid.Column="1">
+                <Button Click="Button_Click_0" Background="#FAFAFA" Padding="25 0 25 0" FontFamily="Calibri" Content="0" FontSize="28" Foreground="Black" Width="81.6" Height="52.8"/>
+            </Grid>
+            <Grid Grid.Row="5">
+                <Button Click="Btn_Pos_Neg_Click" Background="#FAFAFA" Padding="25 0 25 0" Foreground="Black" Width="81.6" Height="52.8">
+                    <TextBlock>
+                        <Run Text="+" BaselineAlignment="TextTop" FontSize="16"/>
+                        <Run Text="∕" FontSize="20"/>
+                        <Run Text="−" BaselineAlignment="TextBottom" FontSize="16" />
+                    </TextBlock>
+                </Button>
+            </Grid>
+            <Grid Grid.Row="5" Grid.Column="2">
+                <Button Click="Button_Comma_Click" Background="#FAFAFA" Padding="25 0 25 0" FontFamily="Calibri" Content="," FontSize="32" Foreground="Black" Width="81.6" Height="52.8"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

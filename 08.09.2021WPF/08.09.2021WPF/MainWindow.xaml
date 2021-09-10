@@ -1,0 +1,71 @@
+﻿<Window x:Class="_08._09._2021WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_08._09._2021WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="LightSkyBlue">
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Button Background="Transparent" Grid.Column="1" Height="100" Width="100" BorderThickness="3" FontSize="22" BorderBrush="Aquamarine">Click Me</Button>
+
+        <StackPanel Grid.Column="2">
+
+            <CheckBox>
+                <CheckBox.RenderTransform>
+                    <ScaleTransform ScaleX="4" ScaleY="4"/>
+                </CheckBox.RenderTransform>Blue
+            </CheckBox>
+        </StackPanel>-->
+
+        <!--<Border Panel.ZIndex="1" Height="20" Width="20" Background="Orchid" CornerRadius="50">
+            <CheckBox Background="Orchid" BorderBrush="Orchid"></CheckBox>
+        </Border>-->
+
+        <!--<RadioButton>
+            <RadioButton.RenderTransform>
+                <ScaleTransform ScaleX="4" ScaleY="4"/>
+            </RadioButton.RenderTransform> Blue
+        </RadioButton>-->
+
+        <!--<StackPanel>
+            <Label FontSize="22">Username</Label>
+            <TextBox FontSize="22"/>
+        </StackPanel>-->
+
+        <!--<TextBlock VerticalAlignment="Bottom" FontSize="26">Text</TextBlock>-->
+
+        <!--<Button Background="Snow" Margin="80 20">
+            <Button.ToolTip>
+                <StackPanel>
+                    <Label>Olalalalal</Label>
+                    <Line Stroke="Red" StrokeThickness="4"></Line>
+                    --><!--<Image Height="50" Width="50" Source=""></Image>--><!--
+                </StackPanel>
+            </Button.ToolTip>
+        </Button>-->
+
+        <Frame Name="frame" Source="https://www.google.com/"></Frame>
+        <GroupBox Height="90" Header="Buttons" BorderThickness="4">
+            <StackPanel>
+                <Button>1</Button>
+                <Button>2</Button>
+                <Button>3</Button>
+                
+            </StackPanel>
+        </GroupBox>
+        
+    </Grid>
+</Window>
